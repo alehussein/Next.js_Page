@@ -37,6 +37,7 @@ export async function getStaticProps() {
     props: {
       meetups: DUMMY_MEETUP,        //always a object must return
     },
+    revalidate: 10 // number of seconds next wait until page regenerate
   }; 
 }
 
