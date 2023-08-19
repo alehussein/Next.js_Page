@@ -31,14 +31,27 @@ const HomePage = (props) => {
   return <MeetupList meetups={props.meetups} />;
 };
 
-export async function getStaticProps() {
-  //fetch data from api
+// export async function getServerSideProps(context){
+//   const req = context.req;
+//   const res = context.res;
+
+//   //fetch data from api
+
+//   return{
+//     props:{
+//       meetups: DUMMY_MEETUP
+//     }
+//   };
+// }
+
+export async function getStaticProps() {   //predetermined
+ //fetch data from api
   return {
     props: {
-      meetups: DUMMY_MEETUP,        //always a object must return
+      meetups: DUMMY_MEETUP, //always a object must return
     },
-    revalidate: 10 // number of seconds next wait until page regenerate
-  }; 
+    revalidate: 10, // number of seconds next wait until page regenerate
+  };
 }
 
 export default HomePage;
