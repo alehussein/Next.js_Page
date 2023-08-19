@@ -1,4 +1,3 @@
-import Layout from "../components/layout/Layout";
 import MeetupList from "../components/meetups/MeetupList";
 
 const DUMMY_MEETUP = [
@@ -8,7 +7,7 @@ const DUMMY_MEETUP = [
     image:
       "https://img.freepik.com/free-vector/group-people-illustration-set_52683-33806.jpg",
     address: "Some street 5 , number 78 City",
-    description: "The first Meetup",
+    description: "The first Meetup description",
   },
   {
     id: "m2",
@@ -16,7 +15,7 @@ const DUMMY_MEETUP = [
     image:
       "https://img.freepik.com/free-vector/group-people-illustration-set_52683-33806.jpg",
     address: "Some street 5 , number 78 City",
-    description: "The second Meetup",
+    description: "The second Meetup description",
   },
   {
     id: "m3",
@@ -24,7 +23,7 @@ const DUMMY_MEETUP = [
     image:
       "https://img.freepik.com/free-vector/group-people-illustration-set_52683-33806.jpg",
     address: "Some street 5 , number 78 City",
-    description: "The third Meetup",
+    description: "The third Meetup description",
   },
 ];
 
